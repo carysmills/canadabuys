@@ -2,21 +2,20 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 # import sys #for UTF and twitter
-import tweepy, time 
+# import tweepy, time 
 import lxml #to use with BS
 
 existingUrls = []
 #for Twitter
-CONSUMER_KEY = ''
-CONSUMER_SECRET = ''
-ACCESS_KEY = ''
-ACCESS_SECRET = ''
-auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
-api = tweepy.API(auth)
-
-reload(sys)
-sys.setdefaultencoding('utf-8')
+# CONSUMER_KEY = ''
+# CONSUMER_SECRET = ''
+# ACCESS_KEY = ''
+# ACCESS_SECRET = ''
+# auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+# auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
+# api = tweepy.API(auth)
+# reload(sys)
+# sys.setdefaultencoding('utf-8')
 
 with open('tenders.csv', 'r') as oldfile:
 	tenders = csv.DictReader(oldfile, delimiter='|')
